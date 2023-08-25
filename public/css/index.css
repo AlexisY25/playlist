@@ -1,0 +1,327 @@
+body {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #F1F1F1;
+    background-color: black;
+    background-image: url(https://cdn.monstercat.com/background-tile.webp);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  .background{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+  }
+
+  div{
+    display: block;
+  }
+
+  .background-poster {
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px) brightness(50%);
+    z-index: -1;
+    background-image: var(--background-url);
+}
+  
+.notice{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    pointer-events: initial;
+    
+}
+
+.alert-inverted {
+    color: black;
+    height: 50px;
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+.notice .alert{
+    margin: 0 1rem 1px 1rem;
+    padding: 0.5rem 1rem;
+    min-height: 55px;
+}
+
+
+.flex-gap-small {
+    gap: 1rem;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.notice .alert a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline !important;
+}
+
+.fw-500, .header-page {
+    font-weight: 500;
+}
+
+.img-lg{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 20px;
+}
+
+.img-menu{
+    width: 25px;
+    height: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+.list-icon{
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 100px;
+}
+
+.btn-link{
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    right: -40%; /* Empieza fuera de la pantalla a la derecha */
+    width: 40%; /* Establece el ancho del menú al 40% */
+    height: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra al lado derecho */
+    transition: right 0.3s ease; /* Agrega una transición suave para la propiedad right */
+}
+
+/* Agrega .hidden para ocultar el menú inicialmente */
+#navigation.hidden {
+    right: -40%; /* Coloca el menú completamente fuera de la pantalla */
+}
+
+/* Estilo para el botón de hamburguesa en dispositivos móviles */
+#menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 1001; /* Asegura que el botón esté sobre el menú */
+}
+
+.img-menu{
+    filter: invert(100%);
+}
+.hmb{
+    filter: invert(100%);
+}
+#close-toggle{
+    filter: invert(100%);
+    display: none;
+}
+#menu-toggle{
+    filter: invert(100%);
+}
+
+.header-bar ul#optionss li {
+    margin-bottom: 20px;/* Ajusta el valor según la separación deseada */
+}
+
+#optionss{
+    position: fixed;
+    top: 15px;
+    right: 12px;
+    width: 100px;
+    z-index: 1000;
+ }
+
+ #position .img-menu{
+    pointer-events: auto;
+ }
+
+
+.alb-music{
+    position: relative; /* Esto establece la posición relativa para que top funcione */
+    top: 100px;
+    left: 90px ;
+}
+
+.portada{
+   width: 400px;
+   height: 400px;
+}
+
+.instint{
+    color:#50A584 ;
+    display: inline-block;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.relsd{
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: #F1F1F1;
+    margin-left: 150px;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.content-descrip{
+   position: relative;
+   bottom: 48px;
+}
+
+.tex-stroker{
+    position: relative;
+    left: 52%;
+    bottom: 310px;
+}
+
+.header-page{
+   top: 60%;
+   color: transparent;
+   -webkit-text-stroke: 1px #F1F1F1 ;
+    font-weight: 700;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.h-normal{
+    color: #F1F1F1;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.btn-listen-now{
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    border-color: #50A584;
+    background-color: #50A584;
+    color: #F1F1F1;
+    width: 185px;
+    height: 46px;
+    border: none;
+    width:  15%;
+    height: 50px;
+    font-weight: 600;
+    z-index: 1001;
+}
+
+.btn-listen-now:hover{
+    background-color: #F1F1F1;
+    color: #000000;
+}
+
+.sh{
+    text-decoration: none ;
+    color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    padding: 13px 40px;
+    font-weight: 600;
+}
+
+.sh:hover{
+    background-color: #F1F1F1;
+    color: #000000;
+}
+
+.btn-shre-listen{
+    position: relative;
+    left: 52%;
+    bottom: 250px;
+    cursor: pointer;
+    outline: none;
+   
+}
+
+.btn-shre-listen .sh .btn-listen-now{
+    pointer-events: auto;
+    cursor: pointer;
+    outline: none;
+}
+
+.shress{
+    text-decoration: none;
+    color:#F1F1F1 ;
+}
+
+.mt-table{
+  position: relative;
+  left: 14%;
+  bottom: 100px;
+}
+
+.header-section{
+    color: #F1F1F1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.p-xxsmall{
+    border: 1px solid #F1F1F1;
+    padding: 13px 40px;
+    font-weight: 600;
+}
+
+.p-xxsmall:hover{
+
+}
+
+h2{
+    color: #F1F1F1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.mb-normal{
+    margin-left: 167px;
+}
+
+.titulo-audio{
+    color: #F1F1F1;
+    font-weight: 600;
+}
